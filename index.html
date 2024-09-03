@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="gallery-container">
+      <div class="gallery-thumbnails">
+        <img src="images/ia1.webp" alt="Imagem 1" onclick="openImage(0)" />
+        <img src="images/ia2.webp" alt="Imagem 2" onclick="openImage(1)" />
+        <img src="images/ia3.webp" alt="Imagem 3" onclick="openImage(2)" />
+        <img src="images/ia4.webp" alt="Imagem 4" onclick="openImage(3)" />
+        <img src="images/ia5.webp" alt="Imagem 5" onclick="openImage(4)" />
+        <img src="images/ia6.webp" alt="Imagem 6" onclick="openImage(5)" />
+      </div>
+      <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img class="lightbox-image" id="lightboxImage" src="" />
+        <div class="lightbox-controls">
+          <button class="prev-btn" onclick="prevImage()">&#10094;</button>
+          <button class="next-btn" onclick="nextImage()">&#10095;</button>
+          <button class="zoom-in-btn" onclick="zoomIn()">+</button>
+          <button class="zoom-out-btn" onclick="zoomOut()">-</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
